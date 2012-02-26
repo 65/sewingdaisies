@@ -1,0 +1,59 @@
+<div id="footer-top">
+
+	<div id="footer-inner-top">
+		
+		<div id="footer1" class="footercol">
+			
+			<h3>Recent Comments</h3>
+			 <ul class="footer-list pkg">
+	            <MTComments lastn="10" sort_order="descend">
+	                <li class="footer-list-item"><MTCommentEntry><a href="<$MTEntryPermalink$>#comment-<$MTCommentID$>"><$MTCommentAuthor$></a> <$MTTrans phrase="on"$> <a href="<$MTEntryPermalink$>"><$MTEntryTitle generate="1"$></a></MTCommentEntry></li>
+	            </MTComments>
+	        </ul>
+    
+		</div>
+		<div id="footer2" class="footercol">
+			
+			<h3>Recent Posts</h3>
+			<ul class="footer-list pkg">
+                <MTEntries lastn="10">
+                    <li class="footer-list-item"><a href="<$MTEntryPermalink$>"><$MTEntryTitle remove_html="1" generate="1"$></a></li>
+                </MTEntries>
+            </ul>		
+			
+		</div>
+		<div id="footer3" class="footercol">
+				
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 30000,
+			  width: 'auto',
+			  height: 212,
+			  theme: {
+			    shell: {
+			      background: '#e6e6e6',
+			      color: '#666666'
+			    },
+			    tweets: {
+			      background: '#f5f5f5',
+			      color: '#666666',
+			      links: '#3d7b22'
+			    }
+			  },
+			  features: {
+			    scrollbar: false,
+			    loop: false,
+			    live: true,
+			    behavior: 'all'
+			  }
+			}).render().setUser('sewingdaisies').start();
+			</script>
+			
+		</div>
+	</div>
+
+</div>

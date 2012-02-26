@@ -1,0 +1,108 @@
+<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+/* Body of the Mobile Design */
+body{
+  -webkit-text-size-adjust:none;
+  font-family:Helvetica, Arial, Verdana, sans-serif;
+  padding:5px;
+  overflow-x:hidden;
+}
+
+div{
+	clear:both!important;
+	display:block!important;
+	width:100%!important;
+	float:none!important;
+	margin:0!important;
+	padding:0!important;
+}
+
+/* Mobile Design Container and Banner */
+#container { background-color: transparent !important; }
+
+#banner {
+	width: 100% !important;
+	background-color: #fff !important;
+	border-bottom: 1px solid #D42932 !important;
+}
+#banner-logo{
+	display: none;
+}
+#banner h1{
+	color:#D42932 !important;
+}
+#banner h2{
+	display: none;
+}
+
+#banner-header {
+	color: #ffffff !important; 
+	margin-top: 0px !important;
+}
+
+hr { display: none !important; }
+
+/* Mobile Design Post Content */
+.entry {
+	background-color: #fff !important;
+	width: 100% !important;
+}
+
+.entry-header a {
+	color: #D42932 !important;
+	text-decoration: none !important; 
+	font-size: small !important;
+}
+
+.entry-body {
+	margin: 0px !important; 
+}
+
+.entry-footer {
+	text-align: left !important;
+}
+
+.entry-footer a {
+	color: #666666 !important;
+	text-decoration: none !important; 
+}
+
+.entry-footer img { padding-right: 5px !important; }
+
+/* Content Pagination Link at Bottom of the Design */
+.content-nav { padding: 10px !important; }
+
+.content-nav a {
+	color: #3D7B22 !important;
+	text-decoration: none !important;
+}
+
+/* Tell the Footer to Hide Itself */
+#footer { display: none !important; }
+
+/* Navigation Bar links added via the footer-extra-mobile module */
+#nav {
+	width: 100% !important;
+	background-color: #e5e5e5 !important;
+}
+
+.nav-list {
+	border-top: 1px solid #D42932;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.nav-list-item {
+	border-bottom: 1px solid #FAFAFA;
+	display: block;
+	padding: 4px 0 4px 5px;
+}
+
+.nav-list-item a {
+	text-decoration: none;
+	color: #3D7B22;
+	display: block;
+}
+
+.last-nav-list-item { float: right !important; border: 0px !important; }
+</style>

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="typepad-standard" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<title><$MTPostPageTitle remove_html="1"$></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<MTBlogIfPrivate>
+	<meta name="robots" content="noindex,nofollow" />
+</MTBlogIfPrivate>
+
+<$MTBlogMetaKeywords$>
+<$MTBlogMetaDescription$>
+<$MTWeblogMobileLink$>
+
+<link rel="stylesheet" href="<$MTBlogURL$>styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<$MTStaticWebPath$>themes/common/print.css" type="text/css" media="print" />
+
+<MTBlogIfPostsFeed>
+<link rel="alternate" type="application/atom+xml" title="<$MTTrans phrase="Posts on [_1] (Atom)" param="MTBlogName" encode_html="1"$>" href="<$MTBlogURL$>atom.xml" />
+</MTBlogIfPostsFeed>
+
+<MTEntryIfAllowComments>
+	<MTBlogIfEntryCommentFeed>
+		<link rel="alternate" type="application/atom+xml" title="<$MTTrans phrase="Comments on [_1] (Atom)" param="MTEntryTitle" encode_html="1"$>" href="<$MTEntryCommentAtomFeedURL$>" />
+	</MTBlogIfEntryCommentFeed>
+</MTEntryIfAllowComments>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/scripts.js"></script>
+
+<link rel="start" href="<$MTBlogURL$>" title="Home" />
+<MTEntryPrevious><link rel="prev" href="<$MTEntryPermalink$>?no_prefetch=1" title="<$MTEntryTitle encode_html="1"$>" /></MTEntryPrevious>
+<MTEntryNext><link rel="next" href="<$MTEntryPermalink$>?no_prefetch=1" title="<$MTEntryTitle encode_html="1"$>" /></MTEntryNext>
+
+<$MTEntryTrackbackData$>
+
+</head>
+
+
+<body class="layout-three-column">
+	
+	<div id="container">
+		<div id="container-inner" class="pkg">
+
+			
+			<!-- banner -->
+			<div id="banner">
+			<div id="banner-inner" class="pkg">
+				<p id="banner-header"><a href="<$MTBlogURL$>" accesskey="1"><$MTBlogName$></a></p>
+				<p id="banner-description"><MTWeblogIfUsesTheme><$MTBlogDescription$><MTElse><MTWeblogStyleIf field="banner_use_image"><MTElse><$MTBlogDescription$></MTElse></MTWeblogStyleIf></MTElse></MTWeblogIfUsesTheme></p>
+			</div><!-- #banner-inner -->
+			</div><!-- #banner -->
+
+			<!-- navigation bar is included from a module, so you can edit it once and reuse it across your blog <$MTInclude module="navigation-bar"$> -->
+
+
+			<div id="pagebody">
+				<div id="pagebody-inner" class="pkg">
+					<$MTInclude module="main-alpha"$>
+					<div id="beta">
+						<div id="beta-inner" class="pkg">
+
+						
+							<p class="content-nav">
+								<MTEntryPrevious><a href="<$MTEntryPermalink$>">&laquo; <$MTEntryTitle$></a> |</MTEntryPrevious>
+								<a href="<$MTBlogRecentPostsURL$>"><$MTTrans phrase="Main"$></a>
+								<MTEntryNext>| <a href="<$MTEntryPermalink$>"><$MTEntryTitle$> &raquo;</a></MTEntryNext>
+							</p>
+	
+							<div class="entry" id="entry-<$MTEntryID$>">
+								
+								<h1 class="entry-header">
+									<$MTEntryTitle$>
+								</h1>
+								
+								<div class="entry-content">
+								
+									<div class="entry-body">
+										<$MTEntryBody$>
+									</div><!-- .entry-body -->
+									
+									<MTEntryIfExtended>
+									<a id="more"></a>
+									<div class="entry-more">
+										<$MTEntryMore$>
+									</div><!-- .entry-more -->
+									</MTEntryIfExtended>
+								
+								</div><!-- .entry-content -->
+		
+								<div class="entry-footer">
+									<p>
+										<MTEntryIfAllowComments><!-- comment count -->
+											<a class="entry-comments" href="<$MTEntryPermalink$>#comments"><$MTTrans phrase="Comments"$> (<$MTEntryCommentCount$>)</a>
+										</MTEntryIfAllowComments>
+										<!-- AddThis Button BEGIN -->
+										<div class="addthis_toolbox addthis_default_style " addthis:title="<$MTEntryTitle encode_url="1"$>" addthis:url="<$MTEntryPermalink$>">
+											<span class="introlabel">If you like this article, please consider sharing it</span>
+											<a class="addthis_button_preferred_1"></a>
+											<a class="addthis_button_preferred_2"></a>
+											<a class="addthis_button_preferred_3"></a>
+											<a class="addthis_button_preferred_4"></a>
+											<a class="addthis_button_compact"></a>
+											<a class="addthis_counter addthis_bubble_style"></a>
+										</div>
+										<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f093dfe78e88f6a"></script>
+										<!-- AddThis Button END -->
+									</p>
+									
+									<p class="entry-footer-info">
+									<!-- <$MTTrans phrase="Posted by [_1] at" param="MTEntryAuthorNickname"$> -->
+									<$MTTrans phrase="Posted at"$> <$MTEntryDate format="%B %d, %Y at %l:%M %p"$>
+									<!-- links to the entry's categories -->
+									<!-- <MTEntryIfCategories>
+										<$MTTrans phrase="in"$> <MTEntryCategories glue=", "><a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a></MTEntryCategories>
+									</MTEntryIfCategories>-->
+								
+									<span class="separator">|</span>
+									<a href="<$MTEntryPermalink$>" class="permalink"><$MTTrans phrase="Permalink"$></a>
+								
+									<MTEntryIfAllowPings><!-- trackback count -->
+										<span class="separator">|</span>
+										<a href="<$MTEntryPermalink$>#trackback"><$MTTrans phrase="TrackBack"$> (<$MTEntryTrackbackCount$>)</a>
+									</MTEntryIfAllowPings>
+								
+									</p><!-- .entry-footer-info -->
+								
+									<MTEntryIfTagged><!-- technorati tags -->
+										<p class="entry-footer-tags">
+											<a href="http://www.<$MTTechnoratiDomain$>/search/<$MTEntryPermalink$>" title="<$MTTrans phrase="Find related items at Technorati."$>"><$MTTrans phrase="Technorati Tags"$></a>:
+											<MTEntryTags glue=", "><a href="http://<$MTTechnoratiDomain$>/tag/<$MTTagLabelClean encode_url="1"$>" rel="tag"><$MTTagLabel$></a></MTEntryTags>
+										</p>
+									</MTEntryIfTagged>
+								</div><!-- .entry-footer -->
+								
+							</div><!-- .entry -->
+							
+							<MTEntryIfAllowPings><!-- TrackBacks -->
+							<div class="trackbacks">
+							<a id="trackback"></a>
+							
+							<h3 class="trackbacks-header"><$MTTrans phrase="TrackBack"$></h3>
+							
+							<div class="trackbacks-info">
+								<p><$MTTrans phrase="TrackBack URL for this entry:"$><br /><span class="trackbacks-link"><$MTEntryTrackbackLink$></span></p>
+								<p><$MTTrans phrase="Listed below are links to weblogs that reference"$> <a href="<$MTEntryPermalink$>"><$MTEntryTitle$></a>:</p>
+							</div><!-- .trackbacks-info -->
+							
+							<div class="trackbacks-content">
+							<MTPings>
+							<div class="trackback">
+								<div class="trackback-content">
+									<p>
+									<a id="p<$MTPingID$>"></a>
+									&raquo; <a rel="nofollow" href="<$MTPingURL$>"><$MTPingTitle$></a> <$MTTrans phrase="from"$> <$MTPingBlogName$><br />
+									<$MTPingExcerpt$> <a rel="nofollow" href="<$MTPingURL$>">[<$MTTrans phrase="Read More"$>]</a>
+									</p>
+								</div><!-- .trackback-content -->
+							
+								<p class="trackback-footer">
+									<$MTTrans phrase="Tracked on"$> <$MTPingDate format_weblog_datetime="1"$>
+								</p>
+							</div><!-- .trackback -->
+							</MTPings>
+							</div><!-- trackbacks-content -->
+							
+							</div><!-- trackbacks -->
+							</MTEntryIfAllowPings>
+							
+							<MTEntryIfAllowComments>
+							<a id="comments"></a>
+							<h3 class="comments-header"><$MTTrans phrase="Comments"$></h3>
+							<div class="comments-content">
+							    <div id="tpc_thread"></div>
+							    <div style="display:none;" id="tpc_post_title"><$MTEntryTitle$></div>
+							    <div style="display:none;" id="tpc_post_message"><$MTEntryBody$></div>
+							    <script type="text/javascript">
+							        var TPConnect = {};
+							
+							        TPConnect.tpc_url = '<$MTEntryPermalink$>';
+							        TPConnect.tpc_title = document.getElementById('tpc_post_title').innerHTML;
+							        TPConnect.tpc_message = document.getElementById('tpc_post_message').innerHTML;
+							    </script>
+							    <script type="text/javascript" src="http://profile.typepad.com/services/embed/tpc/6a01156f3d85e6970c015437a65194970c/embed.js?asset_id=<$MTEntryXID$>"></script>
+							    <script type="text/javascript" src="http://static.typepad.com/.shared/js/profile/blogside.js"></script>
+							    <noscript><a href="http://profile.typepad.com/services/embed/tpc/6a01156f3d85e6970c015437a65194970c/thread?permalink=<$MTEntryPermalink$>">View the entire comment thread.</a></noscript>
+							</div>
+							</MTEntryIfAllowComments>
+										
+						</div>
+					</div>
+					
+					<$MTInclude module="main-gamma"$>
+					
+				</div>
+
+			</div><!-- pagebody -->
+		
+		
+		</div> <!-- container inner -->
+	</div><!-- container -->
+	
+	<$MTInclude module="footer-bottom"$>
+	
+</body>
+
+</html>
+
