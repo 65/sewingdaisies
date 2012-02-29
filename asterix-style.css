@@ -63,7 +63,7 @@ a:hover {
 #gamma {
 	float: left;
 	margin: 0 0 0 0px;
-	width:190px;
+	width:189px;
 }
 
 #gamma-inner {
@@ -216,6 +216,11 @@ a:hover {
 	margin: 0px 0 20px;
 	font-family: 'trebuchet ms', georgia, 'times new roman', serif;
 	font-size: 18px;
+}
+.oscreen{
+  left: -20000px;
+  margin: 0 0 0;
+  position: relative;
 }
 
 .entry-header a {
