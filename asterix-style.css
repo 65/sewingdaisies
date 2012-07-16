@@ -411,19 +411,22 @@ a:hover {
 	width:84px;
 }
 
-#crochet-holder{
-	width:520px;
+#crochet-holder {
+    display: inline-block;
+    padding-bottom: 50px;
+    width: 520px;
 }
 #crochet-holder h3{
 	color:#737373;
 	font-size:14px;
 	min-height:41px;
+	
 }
 
 #crochet-holder .item{
 	width:153px;
 	float:left;
-	margin:10px;
+	margin:10px 10px 20px 10px;
 	display:block;
 }
 #crochet-holder .item div{
@@ -480,7 +483,7 @@ a:hover {
 	margin-top: 20px;
 }
 
-.footercol a.facebook{
+.footercol a.facebook, .module-content .facebook{
 	background-image: url(/logos/widget-share.png);
 	background-repeat: no-repeat;
 	background-position:0 -224px;
@@ -488,7 +491,7 @@ a:hover {
 	height:32px;
 	display:inline-block;
 }
-.footercol a.flickr{
+.footercol a.flickr, .module-content .flickr{
 	background-image: url(/logos/widget-share.png);
 	background-repeat: no-repeat;
 	background-position:0 -768px;
@@ -496,7 +499,7 @@ a:hover {
 	height:32px;
 	display:inline-block;
 }
-.footercol a.twitter{
+.footercol a.twitter, .module-content .twitter{
 	background-image: url(/logos/widget-share.png);
 	background-repeat: no-repeat;
 	background-position:0 -640px;
@@ -504,7 +507,7 @@ a:hover {
 	height:32px;
 	display:inline-block;
 }
-.footercol a.pinterest{
+.footercol a.pinterest, .module-content .pinterest{
 	background-image: url(/logos/widget-share.png);
 	background-repeat: no-repeat;
 	background-position:0 -736px;
@@ -529,7 +532,7 @@ a:hover {
 	height:32px;
 	display:inline-block;
 }
-.footercol a.facebook span,.footercol a.flickr span, .footercol a.pinterest span,.footercol a.twitter span,.footercol a.rss span,.footercol a.email span{
+.footercol a.facebook span,.footercol a.flickr span, .footercol a.pinterest span,.footercol a.twitter span,.footercol a.rss span,.footercol a.email span,.module-content a.facebook span,.module-content a.pinterest span,.module-content a.twitter span,.module-content a.flickr span{
 	text-indent: -9000px;
 	display:block;
 }

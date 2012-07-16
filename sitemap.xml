@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
+http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+
+<url>
+<loc><$MTBlogURL encode_xml="1"$></loc>
+<changefreq>daily</changefreq>
+<MTEntries lastn="1">
+<lastmod><$MTEntryDate format="%Y-%m-%d"$></lastmod>
+</MTEntries>
+<priority>1.0</priority>
+</url>
+
+<MTEntries lastn="999">
+<url>
+<loc><$MTEntryPermalink encode_xml="1"$></loc>
+<lastmod><$MTEntryDate format="%Y-%m-%d"$></lastmod>
+<priority>0.8</priority>
+</url>
+</MTEntries>
+
+<MTArchiveList archive_type="Category">
+<url>
+<loc><$MTArchiveLink encode_xml="1"$></loc>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+</MTArchiveList>
+
+<MTArchiveList archive_type="Monthly">
+<url>
+<loc><$MTArchiveLink encode_xml="1"$></loc>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+</MTArchiveList>
+
+<MTPages >
+<url>
+<loc><$MTBlogURL encode_xml="1"$><$MTPageFilename encode_xml="1"$></loc>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+</MTPages>
+</urlset>

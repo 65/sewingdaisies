@@ -2,7 +2,8 @@ $().ready(function() {
 		$('#comments-action').next().css('display','none');
 		$('.entry-body img').each(function(){
 			var $permalink = $(this).parents('.entry').find('.permalink').attr('href');
-			$(this).wrap('<div class="pinme" style="' + $(this).attr('style') + '" />').after('<a href="http://pinterest.com/pin/create/button/?url=' + $permalink + '&media=' + $(this).attr('src') + '&description=' + $(this).attr('alt') + '" class="pin-it-button" count-layout="vertical">Pin It</a>');
+			if ($permalink != undefined)
+				$(this).wrap('<div class="pinme" style="' + $(this).attr('style') + '" />').after('<a href="http://pinterest.com/pin/create/button/?url=' + $permalink + '&media=' + $(this).attr('src') + '&description=' + $(this).attr('alt') + '" class="pin-it-button" count-layout="vertical">Pin It</a>');
 		});
 		$('.pinme').hover(function() {
 		      $(this).children('iframe').css('display','block');
